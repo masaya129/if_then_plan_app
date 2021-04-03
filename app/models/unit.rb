@@ -7,7 +7,7 @@ class Unit < ActiveHash::Base
     { id: 5, name: 'ページ'}
   ]
 
-    include ActiveHash::Associations
-    has_many :tasks
+  include ActiveHash::Associations
+  has_many :tasks
   
 end

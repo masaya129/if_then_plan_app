@@ -21,12 +21,13 @@
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
               </li>
             </ul>
-            </span>
+
             <div class="user_nav grid-6">
-              <a class="post" href="/tasks/new">投稿する</a>
-            </div>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              <a class="post" href="/tasks/new">＋</a>
+            </span>
+            <%# <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
             <%# <%= link_to "投稿する", new_task_path, class: "post" %>
+            </div>
           </div>
         <% else %>
           <div class="grid-6">

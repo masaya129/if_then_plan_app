@@ -1,2 +1,17 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<div class="tasks_row">
+  <% @tasks.each do |task| %>
+    <div class="task_post" >
+      <p><%= task.title %></p>
+      <span class="ifname">
+        <p>IF:<%= task.if_task %></p>
+        <p>THEN:<%= task.then_task %>
+        </p>
+      </span>
+    </div>
+  <% end %>
+  <% if @tasks.length == 0 %>
+    <div class="task_post">
+      <p>IF: ※習慣化したいことに結びつける行動・場所・時間などを入れよう</p>
+      <p>THEN: ※習慣化したいことを入力</p>
+  <% end %>
+</div>
