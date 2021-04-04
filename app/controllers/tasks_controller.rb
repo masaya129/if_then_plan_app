@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     if task.update(task_params) 
       redirect_to root_path
     else
-      render :edit
+      redirect_to edit_task_path(task.id)
     end
   end
 
