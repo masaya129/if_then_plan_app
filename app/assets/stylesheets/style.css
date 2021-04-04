@@ -769,7 +769,7 @@ header.header div.header__bar.row div.grid-6 {
 header.header div.header__bar.row div.grid-6 a.post {
   width: 120px;
   display: inline-left;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 header.header .user_nav {
@@ -1041,7 +1041,7 @@ footer {
 }
 
 footer p {
-  text-align: center;
+  text-aligcenter;
 }
 
 .search-form {
@@ -1056,4 +1056,29 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+/* 以下自作 */
+
+.task_post {
+  border: 1px solid  #000 ;
+  padding: 20px;
+  margin: 45px 120px;
+}
+
+.if-form {
+  width: 500px;
+  padding: 15px;
+  border: 1px solid white;
+  display: block;
+}
+
+.task-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-text {
+  border: 1px solid #84d3ef;
+  background-color: #84d3ef;
 }
