@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_04_02_083926) do
     t.string "if_task", null: false
     t.string "then_task", null: false
     t.string "title", null: false
-    t.integer "unit_id", null: false
+    t.string "unit", null: false
     t.integer "month_goal", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

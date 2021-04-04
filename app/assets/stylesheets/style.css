@@ -1065,3 +1065,10 @@ footer p {
   padding: 20px;
   margin: 45px 120px;
 }
+
+.if-form {
+  width: 500px;
+  padding: 15px;
+  border: 1px solid white;
+  display: block;
+}
