@@ -9,6 +9,11 @@ class TasksController < ApplicationController
   
   def create
     @task = Task.create(task_params)
+    if @task.save
+      render :create
+    else
+      render :new
+    end
   end
 
   private
