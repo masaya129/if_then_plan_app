@@ -1072,3 +1072,13 @@ footer p {
   border: 1px solid white;
   display: block;
 }
+
+.task-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-text {
+  border: 1px solid #84d3ef;
+  background-color: #84d3ef;
+}

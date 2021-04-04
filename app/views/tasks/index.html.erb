@@ -2,7 +2,11 @@
   <% if user_signed_in? %>
     <% current_user.tasks.each do |task| %>
       <div class="task_post" >
-        <p><%= task.title %></p>
+        <div class="task-title"><%= task.title %>
+          <div class="edit-text">
+            <%= link_to '編集', edit_task_path(task.id), method: :get %>
+          </div>
+        </div>
         <span class="ifname">
           <p>IF:<%= task.if_task %></p>
           <p>THEN:<%= task.then_task %>
