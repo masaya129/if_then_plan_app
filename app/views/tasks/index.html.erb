@@ -3,13 +3,19 @@
     <% current_user.tasks.each do |task| %>
       <div class="task_post" >
         <div class="task-title"><%= task.title %>
-          <div class="edit-text">
-            <%= link_to '編集', edit_task_path(task.id), method: :get %>
-          </div>
+          <ul class="edit-text">
+            <li class="edit-box">
+              <%= link_to '編集', edit_task_path(task.id), method: :get %>
+            </li>
+            <li class="edit-box">
+              <%= link_to '削除', task_path(task.id), method: :delete, data: { confirm: '本当に削除しますか？' } %>
+            </li>
+          </ul>
         </div>
         <span class="ifname">
-          <p>IF:<%= task.if_task %></p>
-          <p>THEN:<%= task.then_task %>
+          <p class="if-box">IF:<%= task.if_task %></p>
+          <p class="then-box">THEN:
+          <span class="thenfile"><%= task.then_task %></span>
           </p>
         </span>
       </div>

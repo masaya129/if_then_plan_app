@@ -1081,4 +1081,31 @@ footer p {
 .edit-text {
   border: 1px solid #84d3ef;
   background-color: #84d3ef;
+  display: block;
+  justify-content: center;
+  width: 10%;
+}
+
+.edit-box {
+  border: 1px solid white;
+  padding: 5px;
+  justify-content: flex-end;
+
+}
+
+.if-box {
+  font-size: 25px;
+  border: 5px solid #57C3E9;
+  padding: 5px;
+}
+
+.then-box {
+  font-size: 25px;
+  border: 5px solid #57C3E9;
+  padding: 5px;
+
+}
+
+.thenfile {
+  color: #57C3E9;
 }
