@@ -1081,4 +1081,15 @@ footer p {
 .edit-text {
   border: 1px solid #84d3ef;
   background-color: #84d3ef;
+  display: block;
+  justify-content: center;
+  width: 10%;
+}
+
+.edit-box {
+  border: 1px solid white;
+  margin right: 10;
+  padding: 5px;
+  justify-content: flex-end;
+
 }
