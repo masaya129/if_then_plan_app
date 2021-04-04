@@ -1088,8 +1088,24 @@ footer p {
 
 .edit-box {
   border: 1px solid white;
-  margin right: 10;
   padding: 5px;
   justify-content: flex-end;
 
+}
+
+.if-box {
+  font-size: 25px;
+  border: 5px solid #57C3E9;
+  padding: 5px;
+}
+
+.then-box {
+  font-size: 25px;
+  border: 5px solid #57C3E9;
+  padding: 5px;
+
+}
+
+.thenfile {
+  color: #57C3E9;
 }
