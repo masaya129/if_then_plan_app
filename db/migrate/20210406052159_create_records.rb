@@ -3,6 +3,7 @@ class CreateRecords < ActiveRecord::Migration[6.0]
     create_table :records do |t|
       t.integer :count, null: false
       t.text :memo
+      t.datetime :start_time
       t.references :user, null: false, foreign_key: true
       t.references :task, null: false, foreign_key: true
       t.timestamps

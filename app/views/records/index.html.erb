@@ -1,2 +1,12 @@
-<h1>Records#index</h1>
-<p>Find me in app/views/records/index.html.erb</p>
+<%= month_calendar events: @records do |date, records| %>
+  <%= date.day %>
+
+  <%# <% link_to date.all, new_record_path, method: :get%> 
+
+  <% records.each do |record|%>
+    <div>
+      <% link_to record.count, record %>
+
+    </div>
+  <% end %>
+<% end %>

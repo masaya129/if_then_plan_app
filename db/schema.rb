@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_052159) do
   create_table "records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "count", null: false
     t.text "memo"
+    t.datetime "start_time"
     t.bigint "user_id", null: false
     t.bigint "task_id", null: false
     t.datetime "created_at", precision: 6, null: false
