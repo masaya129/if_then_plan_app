@@ -1109,3 +1109,20 @@ footer p {
 .thenfile {
   color: #57C3E9;
 }
+
+.tasktitle {
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+  color: #666;
+  border-bottom: 3px solid #57C3E9;
+}
+
+.counttext {
+  display: flex;
+}
+
+.countunit {
+  font-size: 30px;
+}

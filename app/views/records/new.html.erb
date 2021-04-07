@@ -1,0 +1,20 @@
+<div class="contents row">
+  <div class="container">
+    <h3>習慣化タスクの記録作成</h3>
+      <span class="tasktitle">
+      <%= @task.title %>
+        <%= form_with model: [@task,@record], local: true do |form|%>
+      <%# <%= render 'shared/error_messages', model: form.object %> 
+          <div class="counttext">
+            <%= form.datetime_select :start_time %>
+            <%= form.text_field :count, placeholder: "記録を入力" %>
+             <p class="countunit"><%= @task.unit%></p>
+          </div>
+
+          <%= form.text_area :memo, placeholder: "記録の内容や習慣化の気づきなど入力" %>
+          <%= form.submit "保存する"%>
+      <%# <%= form.submit "記録追加" %> 
+      <% end %>
+      </span>
+  </div>
+</div>

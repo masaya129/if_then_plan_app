@@ -1,12 +1,13 @@
-<%= month_calendar events: @records do |date, records| %>
+<%= link_to "記録を登録する", "/tasks/#{@task.id}/records/new", method: :get %>
+  
+<%= month_calendar records: @records do |date, records| %>
   <%= date.day %>
 
   <%# <% link_to date.all, new_record_path, method: :get%> 
 
   <% records.each do |record|%>
     <div>
-      <% link_to record.count, record %>
-
+      <%=  record.count %>
     </div>
   <% end %>
 <% end %>
