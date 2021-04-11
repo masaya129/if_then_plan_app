@@ -1076,6 +1076,7 @@ footer p {
 .task-title {
   display: flex;
   justify-content: space-between;
+  font-size: 30px;
 }
 
 .edit-text {
@@ -1095,19 +1096,20 @@ footer p {
 
 .if-box {
   font-size: 25px;
-  border: 5px solid #57C3E9;
+  border: 1px solid #57C3E9;
   padding: 5px;
 }
 
 .then-box {
   font-size: 25px;
-  border: 5px solid #57C3E9;
+  border: 1px solid #57C3E9;
   padding: 5px;
 
 }
 
 .thenfile {
   color: #57C3E9;
+  font-size: 40px;
 }
 
 .tasktitle {
@@ -1125,4 +1127,15 @@ footer p {
 
 .countunit {
   font-size: 30px;
+}
+
+.calendartitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.recordpath {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 3px solid #57C3E9;
 }
