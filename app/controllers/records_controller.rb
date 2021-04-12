@@ -2,6 +2,8 @@ class RecordsController < ApplicationController
   def index
     @records = Record.all
     @task = Task.find(params[:task_id])
+    @datetime = @task.created_at + 8.week
+    @month_record_count = @task.records.group("MONTH(created_at)").sum(:count)
   end
 
   def new

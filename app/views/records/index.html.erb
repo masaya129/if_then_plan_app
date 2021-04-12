@@ -4,13 +4,28 @@
 <p class="recordpath">
   <%= link_to "記録を登録する", "/tasks/#{@task.id}/records/new", method: :get %>
 </p>
-<%= month_calendar events: @records do |date, records| %>
-  <%= link_to date.day, "/tasks/#{@task.id}/records/new", method: :get %>
+<%= month_calendar events: @task.records do |date, records| %>
+  <%= date.day %>
   <%# <% link_to date.all, new_record_path, method: :get%> 
 
-  <% @task.records.each do |record|%>
-    <div>
-      <%= record.count  %>
+  <% records.each do |record|%>
+    <div class="countfont">
+      <%= record.count  %><%= @task.unit%>
     </div>
   <% end %>
 <% end %>
+
+
+<div class="calendargoal">
+  <div class="task-month-goal">
+    <p>月間目標
+    <%= @task.month_goal%><%=@task.unit%>
+    </P>
+    <p>記録
+    <%# <%= @record("MONTH(count)").count%>
+    <%= @task.records.sum(:count).by_calendar_month %><%= @task.unit%>
+    </p>
+    <p>残り
+    <%= (@task.month_goal - @task.records.all.sum(:count))%><%= @task.unit%>
+  </div>
+</div>
