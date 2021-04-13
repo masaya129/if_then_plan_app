@@ -2,7 +2,7 @@
   <div class="container">
     <h3>習慣化タスク作成</h3>
       <%= form_with(model: @task, local: true) do |form| %>
-      <%# <%= render 'shared/error_messages', model: form.object %> 
+      <%= render 'shared/error_messages', model: form.object %>
       <%= form.text_field :if_task, placeholder: "IF(習慣化したい行動に紐付ける行動・場所・時間..etc)"%>
       <%= form.text_field :then_task, placeholder: "THEN(習慣化したい行動)" %>
       <%= form.text_field :title, placeholder: "習慣化したい行動の総称"%>

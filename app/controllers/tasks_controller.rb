@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update]
-  before_action :user_confirmation,  only: [:edit, :update, :destroy]
+  # before_action :user_confirmation,  only: [:edit, :update, :destroy]
   before_action :set_task,           only: [:edit, :update, :destroy]
   def index
     @tasks = Task.all
@@ -37,16 +37,15 @@ class TasksController < ApplicationController
     end
   end
 
-
   private
 
   def task_params
     params.require(:task).permit(:if_task, :then_task, :title, :unit, :month_goal).merge(user_id: current_user.id)
   end
 
-  def user_confirmation
-    redirect_to root_path unless current_user == @task.user
-  end
+  # def user_confirmation
+  #   redirect_to root_path unless current_user == @task.user
+  # end
       
   def set_task
     @task = Task.find(params[:id])

@@ -15,7 +15,7 @@
         <span class="ifname">
           <p class="if-box">IF:<%= task.if_task %></p>
           <p class="then-box">THEN:
-          <span class="thenfile"><%= task.then_task %></span>
+          <span class="thenfile"><%= link_to task.then_task, task_records_path(task.id), method: :get %></span>
           </p>
         </span>
       </div>
