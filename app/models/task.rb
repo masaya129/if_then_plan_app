@@ -7,7 +7,7 @@ class Task < ApplicationRecord
     validates :then_task
     validates :title
     validates :unit
-    validates :month_goal, numericality: {with: /\A[0-9]+\z/}
+    validates :month_goal, numericality: {with: /^[0-9]+$/, message: '習慣化タスクの目標記録数値は半角数字で入力してください'}
   end
   
 end
