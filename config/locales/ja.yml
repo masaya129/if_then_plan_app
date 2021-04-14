@@ -3,6 +3,7 @@ ja:
    attributes:
      user:
        nickname: ニックネーム
+       email: メールアドレス
      task:
         if_task: ifタスク
         then_task: thenタスク

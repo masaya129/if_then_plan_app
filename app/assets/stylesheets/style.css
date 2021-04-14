@@ -769,7 +769,7 @@ header.header div.header__bar.row div.grid-6 {
 header.header div.header__bar.row div.grid-6 a.post {
   width: 120px;
   display: inline-left;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 header.header .user_nav {
@@ -1060,6 +1060,13 @@ footer p {
 
 /* 以下自作 */
 
+.headerposition {
+  display: flex;
+  font-weight: normal;
+  height: auto;
+  
+}
+
 .task_post {
   border: 1px solid  #000 ;
   padding: 20px;
@@ -1140,3 +1147,6 @@ footer p {
   border-bottom: 3px solid #57C3E9;
 }
 
+.error-message {
+  color: rgba(255, 0, 0, 0.62);
+}
