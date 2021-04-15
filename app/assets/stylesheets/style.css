@@ -1067,6 +1067,12 @@ footer p {
   
 }
 
+.tasks_row {
+  overflow: scroll;
+  width: 90%;
+  height: 80%;
+}
+
 .task_post {
   padding: 0.5em 1em;
   margin: 2em 5em;
@@ -1148,10 +1154,13 @@ footer p {
 }
 
 
-.recordpath {
+.recordpath  {
+  
   text-align: center;
   font-size: 20px;
-  border-bottom: 3px solid #57C3E9;
+  border-bottom: 3px solid #5D9FFF;
+  margin-top: 5px;
+  
 }
 
 .error-message {

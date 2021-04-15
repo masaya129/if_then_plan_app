@@ -25,5 +25,43 @@
         <p>IF: ※習慣化したいことに結びつける行動・場所・時間などを入れよう</p>
         <p>THEN: ※習慣化したいことを入力</p>
     <% end %>
+  <% else %>
+    <div class="app_description">
+      <div class="app_top">
+        <h1>このアプリケーションは<br><span>if then プランニング法</span>に特化した習慣化アプリケーションです</h1>
+        <h2>※<span>If thenプランニング法</span>とは・・・「Aを実行するときBをする」というように日常的に自分が必ずする行動やよく行く場所、時間などに紐づけて<br>
+            習慣化したい行動を実行するタイミングをあらかじめ決めておく方法です</h2>
+      </div>
+      <div class="app_photo">
+        <div class="photo_description">
+          <%= image_tag "task_photo.png", size: '500x200', class:"taskphoto"%>
+            <div class="task_list">
+              「IFの書き方の例」　　　　　
+                <ul>[日常の行動]
+                  <li>歯を磨いたとき</li>
+                  <li>朝起きたとき</li>
+                  <li>寝る前</li>
+                </ul>
+                <ul>[場所/時間]
+                  <li>会社に着いたら</li>
+                  <li>帰宅したとき</li>
+                  <li>9時になったら</li>
+                </ul>
+            </div>
+        </div >
+        <div class="photo_description">
+          <%= image_tag "task_calendar.png", size: '500x200', class:"taskphoto"%>
+            <div class="task_list">
+              「記録してカレンダーで管理」
+              <ul>
+                <li>習慣化の行動を日々記録しよう</li>
+                <li>記録した日は青色に変わります</li>
+                
+        </div>
+      </div>
+       
+    </div>
+
+
   <% end %>
 </div>

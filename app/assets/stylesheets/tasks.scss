@@ -6,3 +6,45 @@
   color: black;
   font-family: 'ほのか明朝', serif;
 }
+
+.app_description {
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.app_top h1 {
+  font-size: 30px;
+  
+}
+
+.app_top span {
+  color: #5D9FFF;
+}
+
+.app_top h2 {
+  margin-top: 10px;
+
+}
+
+.app_photo {
+  display: block;
+  justify-content: center;
+  margin: 30px;
+}
+
+.photo_description {
+  display: flex;
+  justify-content: center;
+  margin-top: 20p;
+}
+
+.taskphoto {
+  width: 500px;
+  height: 200px;
+}
+
+.task_list {
+  margin-left: 20px;
+
+}

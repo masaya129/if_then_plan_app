@@ -6,11 +6,11 @@
       <div class='field-label'>
          <%= form.label :if_task%>
       </div>
-      <%= form.text_field :if_task, placeholder: "IF(習慣化したい行動に紐付ける行動・場所・時間..etc)", autocomplete: "off" %>
+      <%= form.text_field :if_task, placeholder: "習慣化したい行動に紐付ける行動・場所・時間..etc", autocomplete: "off" %>
       <div class='field-label'>
           <%= form.label :then_task%>
       </div>
-      <%= form.text_field :then_task, placeholder: "THEN(習慣化したい行動)", autocomplete: "off" %>
+      <%= form.text_field :then_task, placeholder: "習慣化したい行動", autocomplete: "off" %>
       <div class='field-label'>
           <%= form.label :title%>
       </div>
@@ -18,11 +18,11 @@
       <div class='field-label'>
           <%= form.label :unit%>
       </div>
-      <%= form.text_field :unit, placeholder: "習慣化したい行動の単位(例: 分、時間、回、ページ..etc)", autocomplete: "off"%>
+      <%= form.text_field :unit, placeholder: "例: 分、時間、回、ページ", autocomplete: "off"%>
       <div class='field-label'>
           <%= form.label :month_goal%><%= "※半角数字のみ"%>
       </div>
-      <%= form.text_field :month_goal, placeholder: "習慣化したい行動の月間目標(例：月30時間勉強する→30)※半角数字のみ", autocomplete: "off"%>
+      <%= form.text_field :month_goal, placeholder: "例：月30時間勉強する→30", autocomplete: "off"%>
       <%= form.submit "習慣化スタート！" %>
     <% end %>
   </div>

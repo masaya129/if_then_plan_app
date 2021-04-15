@@ -1,9 +1,9 @@
 <div class="calendartitle">
   <%= @task.title%>
 </div>
-<p class="recordpath">
+<div class="recordpath">
   <%= link_to "記録を登録する", "/tasks/#{@task.id}/records/new", method: :get %>
-</p>
+</div>
 <%= month_calendar events: @task.records do |date, records| %>
   <%= date.day %>
 

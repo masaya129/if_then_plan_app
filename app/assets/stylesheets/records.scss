@@ -11,7 +11,9 @@
   .wday-4 {}
   .wday-5 {}
   .wday-6 {}
-  .today {}
+  .today {
+    background-color: #989898;
+  }
   .past {}
   .future {}
   .start-date {}
@@ -19,7 +21,8 @@
   .next-month { }
   .current-month {}
   .has-events {
-    background: #B8DCFF;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 82%, #6BBBFF 100%);
+
   }
  }
 
@@ -30,8 +33,50 @@
 
  .calendargoal {
    display: flex;
+   justify-content: center;
  }
 
  .task-month-goal {
    display: block;
+   color: black;
+   position: relative;
+   padding:0.3em 6em;
+   margin: 0.5em;
+   text-align: center;
+ }
+
+ .task-month-goal::before,.task-month-goal::after {
+  content:'';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+ }
+
+ .task-month-goal::before {
+  border-left: solid 1px #5767bf;
+  border-top: solid 1px #5767bf;
+  top:0;
+  left: 0;
+ }
+
+ .task-month-goal::after {
+  border-right: solid 1px #5767bf;
+  border-bottom: solid 1px #5767bf;
+  bottom:0;
+  right: 0;
+
+ }
+
+ .task-month-goal p {
+   border-bottom: 1px solid black;
+   margin: 0; 
+   padding: 0;
+ }
+
+ body {
+  background: #989898;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
+  background-blend-mode: multiply,multiply;
  }
