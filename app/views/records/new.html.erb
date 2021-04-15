@@ -7,11 +7,11 @@
         <%= render 'shared/error_messages', model: form.object %>
             <%= form.date_field :start_time %>
           <div class="counttext">
-            <%= form.text_field :count, placeholder: "記録を入力" %>
+            <%= form.text_field :count, placeholder: "記録を入力", autocomplete: "off" %>
              <p class="countunit"><%= @task.unit%></p>
           </div>
 
-          <%= form.text_area :memo, placeholder: "記録の内容や習慣化の気づきなど入力" %>
+          <%= form.text_area :memo, placeholder: "記録の内容や習慣化の気づきなど入力", autocomplete: "off" %>
           <%= form.submit "保存する"%>
       <% end %>
       </span>

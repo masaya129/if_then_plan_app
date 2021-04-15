@@ -2,7 +2,7 @@
   <% if user_signed_in? %>
     <% current_user.tasks.each do |task| %>
       <div class="task_post" >
-        <div class="task-title"><%= task.title %>
+        <div class="task-title">・<%= task.title %>
           <ul class="edit-text">
             <li class="edit-box">
               <%= link_to '編集', edit_task_path(task.id), method: :get %>

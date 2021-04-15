@@ -666,7 +666,7 @@ a {
 }
 
 a:hover {
-  color: #57C3E9;
+  color: #4facfe;
 }
 
 .bold {
@@ -707,8 +707,8 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
-  color: #57C3E9;
+  border: 2px solid #666;
+  color: black;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -717,8 +717,7 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #9bdbf2;
-  color: #9bdbf2;
+  border-color: rgba(255, 255, 255, 0.933);
 }
 
 .title {
@@ -769,7 +768,7 @@ header.header div.header__bar.row div.grid-6 {
 header.header div.header__bar.row div.grid-6 a.post {
   width: 120px;
   display: inline-left;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 header.header .user_nav {
@@ -994,15 +993,15 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 98%, #6BBBFF 100%);
   border-radius: 20px;
-  color: #fff;
+  color: black;
   border: 0;
   font-size: 18px;
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  color: white;
 }
 
 .container {
@@ -1034,11 +1033,6 @@ form input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-footer {
-  margin: 30px auto;
-  padding: 10px;
-  color: #D8D8D8;
-}
 
 footer p {
   text-aligcenter;
@@ -1060,6 +1054,15 @@ footer p {
 
 /* 以下自作 */
 
+.headerposition {
+  display: flex;
+  font-weight: normal;
+  height: auto;
+  text-decoration: none;
+  color: #666;
+  
+}
+
 .task_post {
   border: 1px solid  #000 ;
   padding: 20px;
@@ -1080,29 +1083,28 @@ footer p {
 }
 
 .edit-text {
-  border: 1px solid #84d3ef;
-  background-color: #84d3ef;
+  /* background-color: #84d3ef; */
   display: block;
   justify-content: center;
   width: 10%;
+  
 }
 
 .edit-box {
-  border: 1px solid white;
+  border-bottom: 2px solid #6BBBFF;
   padding: 5px;
-  justify-content: flex-end;
 
 }
 
 .if-box {
   font-size: 25px;
-  border: 1px solid #57C3E9;
+  border-bottom: 2px solid #6BBBFF;
   padding: 5px;
 }
 
 .then-box {
   font-size: 25px;
-  border: 1px solid #57C3E9;
+  border-bottom: 2px solid #6BBBFF;
   padding: 5px;
 
 }
@@ -1121,6 +1123,10 @@ footer p {
   border-bottom: 3px solid #57C3E9;
 }
 
+.success {
+  color: #57C3E9;
+}
+
 .counttext {
   display: flex;
 }
@@ -1134,9 +1140,24 @@ footer p {
   text-align: center;
 }
 
+.calendargoal {
+  /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
+}
+
 .recordpath {
   text-align: center;
   font-size: 20px;
   border-bottom: 3px solid #57C3E9;
 }
 
+.error-message {
+  color: rgba(255, 0, 0, 0.62);
+}
+
+header {
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+}
+
+body, footer {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}

@@ -1,0 +1,15 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       email: メールアドレス
+     task:
+        if_task: ifタスク
+        then_task: thenタスク
+        title: 習慣化タスクのタイトル
+        unit: 習慣化タスクの記録単位
+        month_goal: 習慣化タスクの目標記録数値
+     record:
+        count: 記録
+        start_time: 記録の日付
