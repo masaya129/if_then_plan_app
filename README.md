@@ -11,8 +11,8 @@
 ### **https://if-then-plan-app.herokuapp.com/**
 
 # テスト用アカウント
-### メールアドレス：　test@test11
-### パスワード　　：　test11
+### メールアドレス：　test@test
+### パスワード　　：　test22
 
 # :black_small_square: 利用方法
 #### トップページ右上の「新規登録/ログイン」ボタンをクリックし新規登録/ログインします
@@ -43,17 +43,17 @@
 ## ユーザー管理機能
 #### ログインすればタスク作成ボタンが表示されます
 #### ログインすればユーザーのニックネームが表示され、ニックネームにカーソルを当てるとログアウトボタンが表示されます
-[![Image from Gyazo](https://i.gyazo.com/fbddfca74d269490badc9a870a88427a.gif)](https://gyazo.com/fbddfca74d269490badc9a870a88427a)
+[![Image from Gyazo](https://i.gyazo.com/a3dce128a117988c8aad79a70f64b4e0.gif)](https://gyazo.com/a3dce128a117988c8aad79a70f64b4e0)
 ## タスク管理機能
 #### 習慣化したい行動の入力はif then形式で入力するフォームとなっている
 #### トップページに表示されているタスクには編集ボタンと削除ボタンが表示されていて、ボタンをクリックするとそれぞれ編集/削除できます
 #### タスクの内容によって記録する数値の単位が違うのでそれに対応できるよう単位のフォームを設置しています(勉強なら時間,読書ならページなど)
 #### 入力する項目のフォーム内にわかりやすいよう記入例を表示させています
-[![Image from Gyazo](https://i.gyazo.com/6296d9aa65175c1ef702c719d9ca569a.gif)](https://gyazo.com/6296d9aa65175c1ef702c719d9ca569a)
+[![Image from Gyazo](https://i.gyazo.com/6e2d1e62de9e8b036e5ac68d306fbf6d.gif)](https://gyazo.com/6e2d1e62de9e8b036e5ac68d306fbf6d)
 ## タスク記録機能
 #### 記録する日付の入力フォームは入力しやすいよう右側のカレンダーマークをクリックするとカレンダーが表示され記録したい日にちをクリックすることで日付が自動で入力される仕組みになっています
 #### メモの入力フォームはメモする必要なければ空欄でも記録が保存できるようになっています
-[![Image from Gyazo](https://i.gyazo.com/6ebceaf2e53566f7a5d87dd0d077d7e5.gif)](https://gyazo.com/6ebceaf2e53566f7a5d87dd0d077d7e5)
+[![Image from Gyazo](https://i.gyazo.com/e48edee12917e25e3b1c297e68952399.gif)](https://gyazo.com/e48edee12917e25e3b1c297e68952399)
 
 # :black_small_square: データベース設計
 [![Image from Gyazo](https://i.gyazo.com/bece52923f1147e5532b96c9b4a4b4a1.png)](https://gyazo.com/bece52923f1147e5532b96c9b4a4b4a1)

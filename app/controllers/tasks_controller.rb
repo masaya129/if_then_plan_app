@@ -23,7 +23,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    if task.update(task_params) 
+    if @task.update(task_params) 
       redirect_to root_path
     else
       redirect_to edit_task_path(task.id)
