@@ -21,6 +21,12 @@ class RecordsController < ApplicationController
     
   end
 
+  def show
+    @record = Record.new
+    @task = Task.find(params[:task_id])
+    @records = @task.records.includes(:user)
+  end
+
   private
 
   def record_params

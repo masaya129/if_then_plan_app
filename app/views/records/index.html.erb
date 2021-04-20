@@ -9,7 +9,8 @@
 
   <% records.each do |record|%>
     <div class="countfont">
-      <%= record.count  %><%= @task.unit%>
+      <%= link_to record.count, "/tasks/#{@task.id}/records/#{record.id}", method: :get %><%= @task.unit%>
+      <%= record.memo %>
     </div>
   <% end %>
 <% end %>
