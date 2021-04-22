@@ -9,10 +9,14 @@
 
   <% records.each do |record|%>
     <div class="countfont">
-      <span><%= link_to record.count, "/tasks/#{@task.id}/records/#{record.id}", method: :get %><%= @task.unit%>
-      <div class="memo_info">
-        <%= record.memo %>
-      </div>
+      <span><%= record.count %><%= @task.unit%>
+      <% if record.memo.present? %>
+        <ul class="memo_info">
+          <li>
+              <%= record.memo %>
+          </li>
+        </ul>
+      <% end %>
     </div>
   <% end %>
 <% end %>

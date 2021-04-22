@@ -1179,12 +1179,3 @@ header {
     font-size: 12px;
   }
 }
-
-.countfont span {
-  cursor: pointer;
-}
-
-.countfont span:after {
-  content: '▼';
-  margin-left: -4px;
-}
