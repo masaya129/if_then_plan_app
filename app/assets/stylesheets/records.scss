@@ -51,12 +51,14 @@
   left: 100;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 7px #5D9FFF;
 }
 
 .countfont ul li {
   background-color: #f0f0f0;
   padding: 10px;
+  font-size: 15px;
+  white-space: nowrap;
 }
 
  .calendargoal {

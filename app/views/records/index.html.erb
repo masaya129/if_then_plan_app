@@ -10,13 +10,14 @@
   <% records.each do |record|%>
     <div class="countfont">
       <span><%= record.count %><%= @task.unit%>
-      <% if record.memo.present? %>
-        <ul class="memo_info">
-          <li>
-              <%= record.memo %>
-          </li>
-        </ul>
-      <% end %>
+        <% if record.memo.present? %>
+          <ul class="memo_info">
+            <li>
+                <%= record.memo.chomp %>
+            </li>
+          </ul>
+        <% end %>
+      </span>
     </div>
   <% end %>
 <% end %>
